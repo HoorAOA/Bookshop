@@ -1,0 +1,532 @@
+body {
+  margin: 0;
+}
+
+.banner {
+  background: #212C4F;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .bannerText {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  background: transparent;
+  padding: 20px 0px;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+}
+
+.headerContainer {
+  display: block;
+  max-width: 1200px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  margin-right: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightSide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+.search-container {
+  width: 300px;
+  height: 30px;
+  margin: 0 0;
+}
+
+input#search-bar {
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+  border: 1px solid #D0CFCE;
+  border-radius: 14px;
+  outline: none;
+}
+
+input#search-bar:focus {
+  border: 1px solid #008ABF;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+  color: #666;
+}
+
+input#search-bar:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+input#search-bar:focus::-moz-placeholder {
+  -webkit-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+input#search-bar:focus:-ms-placeholder {
+  -webkit-transition: opacity 0.45s ease;
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  position: relative;
+  color: #666;
+  float: right;
+  width: 22px;
+  height: 22px;
+  top: -26px;
+  right: 5px;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 789px) {
+  nav.navbar {
+    padding: 10px 0;
+    height: 75px;
+  }
+  div.menu {
+    display: none;
+  }
+  .headerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leftSide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 22px;
+  }
+  .hamburger a {
+    height: 24px;
+  }
+  .search-container {
+    width: 100%;
+    min-width: 200px;
+  }
+}
+
+.firstSection {
+  display: block;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.welcome {
+  display: block;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.heading1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.heading3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0 0 20px 0;
+}
+
+.priBtn {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 15px 10px 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #B01EFF;
+  border: transparent solid 1px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.priBtn:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 789px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .welcome {
+    margin-bottom: 20px;
+  }
+}
+
+.cardSection {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+img.image {
+  max-width: 210px;
+  max-height: 256px;
+}
+
+.label h3 {
+  display: block;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #666;
+  font-weight: 500;
+  margin: 0 auto 20px 0;
+  padding-left: 40px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  margin: 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #fff;
+  border-radius: 20px;
+  height: 256px;
+  width: 363px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  border-radius: 20px 0 0 20px;
+}
+
+.rightCard {
+  width: 60%;
+  padding-left: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #666;
+}
+
+.rightCard .bookTitle {
+  font-weight: 600;
+}
+
+.rightCard .authorName, .rightCard .category, .rightCard .oldPrice, .rightCard .newPrice {
+  margin: 0 0 10px 0;
+}
+
+.rightCard .authorName {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.rightCard .category {
+  font-weight: 500;
+}
+
+.rightCard .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rightCard .price .oldPrice {
+  text-decoration: line-through;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.rightCard .price .newPrice {
+  font-weight: 500;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.rating img {
+  height: 15px;
+  width: 15px;
+  padding-right: 4px;
+}
+
+.secBtn {
+  color: #000;
+  border: #000 solid 2px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  padding: 10px 0;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.secBtn:hover {
+  -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.secBtn img {
+  height: 15px;
+  width: 15px;
+  padding-right: 10px;
+}
+
+.secBtn .addtocart {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.75em;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 485px;
+    width: 167px;
+  }
+  .card .image {
+    border-radius: 20px 20px 0 0;
+  }
+  .card .rightCard {
+    width: 100%;
+    padding: 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secBtn {
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 24px;
+    background: #212C4F;
+    border-radius: 0 0 20px 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .secBtn:hover {
+    background-color: #B01EFF;
+    color: #fff;
+  }
+  .secBtn img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.label h3 {
+    padding: 0 0;
+    margin: 40px auto 20px auto;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

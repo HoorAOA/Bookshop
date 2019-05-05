@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up | BOOKSHOP</title>
+    <link rel="stylesheet" href="../stylesheets/login.css">
+</head>
+<body>
+    <section class="leftSection">
+      <div class="leftContainer">
+        <h1>Have An Account ?</h1>
+        <a  class="secBtn" href="/user/login">Login</a>
+      </div>
+    </section>
+
+    <section class="rightSection">
+      <div class="logContainer">
+        <h1 class="welcome"> Create An Account </h1>
+        <p class="lightgraytext">Register using</p>
+        <div class="authStrategies">
+            <a href="#"><img src="../assets/icons/facebook.svg"></a>
+            <a href="#"><img src="../assets/icons/google-plus.svg"></a>
+            <a href="#"><img src="../assets/icons/twitter.svg"></a>
+        </div>
+        <p class="lightgraytext brake">--------------------- or ---------------------</p>
+        <form action="/user/signup" method="POST">
+          <div class="formContainer">
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter Name"
+              value="<%= typeof name != 'undefined' ? name : '' %>"
+            />
+          </div>
+          <div class="formContainer">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+              value="<%= typeof email != 'undefined' ? email : '' %>"
+            />
+          </div>
+          <div class="formContainer">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Create Password"
+              value="<%= typeof password != 'undefined' ? password : '' %>"
+            />
+          </div>
+          <div class="formContainer">
+            <input
+              type="password"
+              id="password2"
+              name="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+              value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+            />
+          </div>
+          <button type="submit" class="priBtn">
+            Register
+          </button>
+        </form>
+      </div>
+    </section>
+</body>
+</html>

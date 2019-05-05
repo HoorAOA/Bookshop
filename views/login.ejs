@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | BOOKSHOP</title>
+    <link rel="stylesheet" href="../stylesheets/login.css">
+</head>
+<body>
+    <section class="leftSection">
+        <div class="leftContainer">
+            <h1>New User?</h1>
+            <a class="secBtn" href="/user/signup">Register</a>
+        </div>
+    </section>
+
+    <section class="rightSection">
+        <div class="logContainer">
+            <h1 class="welcome"> Welcome Back!</h1>
+            <p class="lightgraytext">Login using</p>
+        <div class="authStrategies">
+            <a href="#"><img src="../assets/icons/facebook.svg"></a>
+            <a href="#"><img src="../assets/icons/google-plus.svg"></a>
+            <a href="#"><img src="../assets/icons/twitter.svg"></a>
+        </div>
+        <p class="lightgraytext brake">--------------------- or ---------------------</p>
+            <form action="/user/login" method="POST">
+                <div class="formContainer">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Enter Email"
+                    />
+                </div>
+                <div class="formContainer">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Enter Password"
+                    />
+                </div>
+                <a href="#" class="lightgraytext block">Forgot your Password?</a>
+                <button type="submit" class="priBtn">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
