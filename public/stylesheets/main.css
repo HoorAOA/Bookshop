@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+a.breaker {
+  cursor: default;
+}
+
 .banner {
   background: #212C4F;
   color: white;
