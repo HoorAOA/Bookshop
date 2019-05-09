@@ -1,5 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <% if(typeof errors !== 'undefined') {%>
 <% errors.forEach ((error)=> { %>
-    <%= error.msg %>
+    <div class="alert alert-warning" role="alert">
+        <button type="button" class="close-alert">×</button>
+        <%= error.msg %>
+    </div>
 <% }); %>
 <% }; %>
+<script>
+    $(".close-alert").click(function(e){
+        $(this).parent().remove();
+        e.preventDefault();
+    });
+</script>

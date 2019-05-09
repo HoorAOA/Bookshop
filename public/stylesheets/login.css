@@ -134,4 +134,40 @@ h1 {
   border: none;
   border-bottom: 1px solid rgba(102, 102, 102, 0.705);
 }
+
+.alert {
+  min-width: 150px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.alert-warning {
+  background-color: #ebc063;
+  border-color: #e8b64c;
+  color: #a07415;
+}
+
+.alert .close-alert {
+  -webkit-appearance: none;
+  position: relative;
+  float: right;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  color: inherit;
+  background: 0 0;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  filter: alpha(opacity=40);
+  opacity: .4;
+}
+
+.alert .close-alert:hover {
+  filter: alpha(opacity=70);
+  opacity: .7;
+}
 /*# sourceMappingURL=login.css.map */
