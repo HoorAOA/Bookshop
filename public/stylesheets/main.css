@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a.breaker {
@@ -9,7 +10,6 @@ a.breaker {
 .banner {
   background: #212C4F;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   width: 100%;
   height: auto;
@@ -58,7 +58,6 @@ nav {
           align-items: center;
   float: left;
   margin-right: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .rightSide {
@@ -70,7 +69,6 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   float: right;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -219,7 +217,6 @@ input#search-bar:focus:-ms-placeholder {
 }
 
 .heading1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 45px;
   font-weight: 600;
   color: #000;
@@ -227,7 +224,6 @@ input#search-bar:focus:-ms-placeholder {
 }
 
 .heading3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #666;
@@ -236,7 +232,6 @@ input#search-bar:focus:-ms-placeholder {
 
 .priBtn {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   text-decoration: none;
   padding: 8px 15px 10px 15px;
@@ -292,7 +287,6 @@ img.image {
 .label h3 {
   display: block;
   letter-spacing: 2px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #666;
   font-weight: 500;
   margin: 0 auto 20px 0;
@@ -346,7 +340,6 @@ img.image {
 .rightCard {
   width: 60%;
   padding-left: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #666;
 }
 
@@ -443,7 +436,6 @@ img.image {
 }
 
 .secBtn .addtocart {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.75em;
   list-style: none;
   text-decoration: none;

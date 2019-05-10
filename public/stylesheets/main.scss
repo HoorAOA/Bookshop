@@ -12,6 +12,7 @@ $secBtn:#C6D0EB;
 
 body{
     margin: 0;
+    font-family: $fontFamily;
 }
 
 a.breaker {
@@ -22,7 +23,6 @@ a.breaker {
 .banner{
     background: #212C4F;
     color: white;
-    font-family: $fontFamily;
     font-weight: 500;
     width: 100%;
     height: auto;
@@ -63,14 +63,12 @@ nav{
     align-items: center;
     float: left;
     margin-right: 50px;
-    font-family:$fontFamily;
 }
 
 .rightSide{
     display: flex;
     flex-direction: row;
     float: right;
-    font-family: $fontFamily;
     height: 100%;
     align-items: center;
     ul{
@@ -183,14 +181,12 @@ nav{
     align-items: left;
 }
 .heading1{
-    font-family: $fontFamily;
     font-size: 45px;
     font-weight: 600;
     color: $primayFontColor;
     margin:0 0 15px 0;
 }
 .heading3{
-    font-family: $fontFamily;
     font-size: 20px;
     font-weight: 500;
     color: $secFontColor;
@@ -198,7 +194,6 @@ nav{
 }
 .priBtn{   
     color: white;
-    font-family: $fontFamily;
     font-size: 14px;
     text-decoration: none;
     padding: 8px 15px 10px 15px;
@@ -241,7 +236,6 @@ img.image{
 .label h3{
     display: block;
     letter-spacing: 2px;
-    font-family: $fontFamily;
     color: $secFontColor;
     font-weight: 500;
     margin: 0 auto 20px 0;
@@ -277,7 +271,6 @@ img.image{
 .rightCard{
     width:60%;
     padding-left: 20px;
-    font-family: $fontFamily;
     color: $secFontColor;
     .bookTitle{
         font-weight: 600;
@@ -340,7 +333,6 @@ img.image{
         padding-right: 10px;
     }
     .addtocart{
-        font-family: $fontFamily;
         font-size: 0.75em;
         list-style: none;
         text-decoration: none;
