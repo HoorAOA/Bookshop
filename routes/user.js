@@ -9,7 +9,7 @@ router.get('/signup', (req,res) => res.render('signup'));
 router.post('/signup', (req,res) => {
     const {name , email, password, password2} = req.body;
     let errors = [];
-    
+    //Validation
     if(!name || !email || !password || !password2){
         errors.push({msg:'Please fill in all required fields'});
     } else if(password.length < 8){
@@ -45,8 +45,10 @@ router.post('/signup', (req,res) => {
                     if (err) throw err;
                     newUser.password = hash;
                     newUser.save()
-                        .then(() => {res.redirect('/')
-                        console.log(newUser);
+                        .then(user => {
+                            req.flash('success_msg','You successfully registered');
+                            res.redirect('/user/login');
+                            console.log(newUser);
                         })
                         .catch(err => console.log(err));
                     });

@@ -124,6 +124,16 @@ h1{
         border-color: lighten(#E2A41F, 10%);
         color: darken(#E2A41F, 15%);
       }
+      &-success{
+        background-color: lighten(#5cb85c, 15%);
+        border-color: lighten(#5cb85c, 10%);
+        color: darken(#5cb85c, 15%);
+      }
+      &-danger{
+        background-color: lighten(#d43f3a, 15%);
+        border-color: lighten(#d43f3a, 10%);
+        color: darken(#d43f3a, 15%);
+      }
       .close-alert{
         -webkit-appearance: none;
         position: relative;

@@ -1,5 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<% if(typeof errors !== 'undefined') {%>
+
+<% if(typeof errors != 'undefined') {%>
 <% errors.forEach ((error)=> { %>
     <div class="alert alert-warning" role="alert">
         <button type="button" class="close-alert">×</button>
@@ -7,6 +8,21 @@
     </div>
 <% }); %>
 <% }; %>
+
+<% if(success_msg != '') {%>
+    <div class="alert alert-success" role="alert">
+        <button type="button" class="close-alert">×</button>
+        <%= success_msg %>
+    </div>
+<% }; %>
+
+<% if(error_msg != '') {%>
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="close-alert">×</button>
+        <%= error_msg %>
+    </div>
+<% }; %>
+
 <script>
     $(".close-alert").click(function(e){
         $(this).parent().remove();

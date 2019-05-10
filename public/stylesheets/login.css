@@ -146,6 +146,18 @@ h1 {
   color: #a07415;
 }
 
+.alert-success {
+  background-color: #91cf91;
+  border-color: #80c780;
+  color: #3d8b3d;
+}
+
+.alert-danger {
+  background-color: #e27c79;
+  border-color: #dd6864;
+  color: #9f2723;
+}
+
 .alert .close-alert {
   -webkit-appearance: none;
   position: relative;
