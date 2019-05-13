@@ -23,6 +23,13 @@
     </div>
 <% }; %>
 
+<% if(error != '') {%>
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="close-alert">×</button>
+        <%= error %>
+    </div>
+<% }; %>
+
 <script>
     $(".close-alert").click(function(e){
         $(this).parent().remove();
