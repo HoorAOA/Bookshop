@@ -15,89 +15,38 @@
         <h3>Top Sellers</h3>
     </div>
     <div class="cards">
+    <%for(var i = 0 ; i < 3 ; i++){%>
         <div class="card">
             <div class="leftCard">
-                <img class="image" src="images/9781785152207.jpg">
+                <img class="image" src='<%= books[i].imagePath %>'>
             </div>
             <div class="rightCard">
-                <h4 class="bookTitle">The bookTitle</h4>
-                <h5 class="authorName">By authorName</h5>
-                <h5 class="category">category</h5>
+                <h4 class="bookTitle"> <%= books[i].Title %> </h4>
+                <h5 class="authorName"> <%= books[i].Author %> </h5>
+                <h5 class="category"> <%= books[i].Category %></h5>
                 <div class="rating">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
+                    <%var rating = books[i].Rating %>
+                    <% for (var j=0 ; j < rating; j++){ %> 
+                        <img src="assets/icons/star.svg">
+                    <%} %>
                 </div>
                 <div class="price">
-                    <h5 class="oldPrice">150 SDG</h5>
-                    <h5 class="newPrice">80 SDG</h5>
-                </div>
-                <a class="secBtn" href="#">
-                    <img src="assets/icons/shopping-cart.svg">
-                    <span class="addtocart" >Add to cart</span>
-                </a>       
-            </div>     
-        </div>
-        <div class="card">
-            <div class="leftCard">
-                <img class="image" src="images/9781471176357.jpg">
-            </div>
-            <div class="rightCard">
-                <h4 class="bookTitle">The bookTitle</h4>
-                <h5 class="authorName">By authorName</h5>
-                <h5 class="category">category</h5>
-                <div class="rating">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                </div>
-                <div class="price">
-                    <h5 class="oldPrice">150 SDG</h5>
-                    <h5 class="newPrice">80 SDG</h5>
-                </div>
-                <a class="secBtn" href="#">
-                    <img src="assets/icons/shopping-cart.svg">
-                    <span class="addtocart" >Add to cart</span>
-                </a>   
-            </div>     
-        </div>
-        <div class="card">
-            <div class="leftCard">
-                <img class="image" src="images/9780241349571.jpg">
-            </div>
-            <div class="rightCard">
-                <h4 class="bookTitle">The bookTitle</h4>
-                <h5 class="authorName">By authorName</h5>
-                <h5 class="category">category</h5>
-                <div class="rating">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                    <img src="assets/icons/star.svg">
-                </div>
-                <div class="price">
-                    <h5 class="oldPrice">150 SDG</h5>
-                    <h5 class="newPrice">80 SDG</h5>
+                    <h5 class="oldPrice"><%= books[i].Price %></h5>
+                    <h5 class="newPrice"><%= books[i].newPrice %></h5>
                 </div>
                <a class="secBtn" href="#">
                     <img src="assets/icons/shopping-cart.svg">
                     <span class="addtocart" >Add to cart</span>
                 </a>   
-            </div>     
+            </div>
         </div>
+        <%}%>
     </div>
 </section>
 
 <section class="preorder">
     
-    <%Object.keys(books).forEach(function(book){%>
-        <h1>book</h1>
-    <%})%>
+    
     
 </section>
 <% include partials/footer%>

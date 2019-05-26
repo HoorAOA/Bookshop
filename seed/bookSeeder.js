@@ -1,6 +1,6 @@
-var Book = require('../models/book');
-var mongoose = require('mongoose');
 
+var mongoose = require('mongoose');
+var Book = require('../models/book');
 const db = require('../config/keys').MongoURI;
 mongoose.connect(db,{useNewUrlParser:true})
     .then(()=> console.log('MongoDB connected'))
@@ -8,7 +8,17 @@ mongoose.connect(db,{useNewUrlParser:true})
 
 var Books = [ 
     new Book({
-        imagePath:"images/9781785152207.jpg",
+        imagePath:'images/9781785152207.jpg',
+        Title:'The bookTitle',
+        Author:'By authorName',
+        Category:'category',
+        Rating:'3',
+        Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
+        Price:'150 SDG',
+        newPrice:'80 SDG'
+    }),
+    new Book({
+        imagePath:'images/9781471176357.jpg',
         Title:'The bookTitle',
         Author:'By authorName',
         Category:'category',
@@ -18,21 +28,11 @@ var Books = [
         newPrice:'80 SDG'
     }),
     new Book({
-        imagePath:"images/9781471176357.jpg",
+        imagePath:'images/9780241349571.jpg',
         Title:'The bookTitle',
         Author:'By authorName',
         Category:'category',
-        Rating:'5',
-        Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
-        Price:'150 SDG',
-        newPrice:'80 SDG'
-    }),
-    new Book({
-        imagePath:"images/9780241349571.jpg",
-        Title:'The bookTitle',
-        Author:'By authorName',
-        Category:'category',
-        Rating:'5',
+        Rating:'4',
         Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
         Price:'150 SDG',
         newPrice:'80 SDG'
