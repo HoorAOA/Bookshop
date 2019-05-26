@@ -2,9 +2,20 @@ const express = require('express');
 const router = express.Router();
 const {ensureAuthenticated} = require('../config/auth');
 
-router.get('/', (req,res) => res.render('landing'));
-router.get('/dashboard', ensureAuthenticated, (req,res) =>res.render('dashboard',{
-    name: req.user.name
-}));
+const Book = require('../models/book');
+
+router.get('/', (req,res) => {
+    Book.find((err,books) => {
+        if (err){
+            console.log(err)   
+        } else{
+        res.render('landing', {books: books})
+    }})
+});
+
+router.get('/dashboard', ensureAuthenticated, (req,res) =>
+    res.render('dashboard',{name: req.user.name}
+    )
+);
 
 module.exports = router;
