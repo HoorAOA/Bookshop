@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose")
 const flash = require('connect-flash');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const passport = require('passport');
 
 require('./config/passport')(passport);
@@ -26,6 +27,8 @@ app.use(session({
     secret: 'keyboard cat',
     resave: true,
     saveUninitialized: true,
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    cookie:{ maxAge: 180 * 60 * 1000 }
 }));
 
 //bodyParser
@@ -44,6 +47,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(function( req, res, next){
+    res.locals.session = req.session;
+    next();
+});
 
 //Routes
 app.use('/',require('./routes/landing'));
