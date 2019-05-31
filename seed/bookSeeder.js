@@ -14,8 +14,8 @@ var Books = [
         Category:'category',
         Rating:'3',
         Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
-        Price:'150 SDG',
-        newPrice:'80 SDG'
+        Price:100,
+        newPrice:50
     }),
     new Book({
         imagePath:'images/9781471176357.jpg',
@@ -24,8 +24,8 @@ var Books = [
         Category:'category',
         Rating:'5',
         Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
-        Price:'150 SDG',
-        newPrice:'80 SDG'
+        Price:90,
+        newPrice:45
     }),
     new Book({
         imagePath:'images/9780241349571.jpg',
@@ -34,8 +34,8 @@ var Books = [
         Category:'category',
         Rating:'4',
         Description:'hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum',
-        Price:'150 SDG',
-        newPrice:'80 SDG'
+        Price:80,
+        newPrice:40
     })
 ];
 

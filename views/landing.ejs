@@ -31,10 +31,10 @@
                     <%} %>
                 </div>
                 <div class="price">
-                    <h5 class="oldPrice"><%= books[i].Price %></h5>
-                    <h5 class="newPrice"><%= books[i].newPrice %></h5>
+                    <h5 class="oldPrice"><%= books[i].Price %> SDG</h5>
+                    <h5 class="newPrice"><%= books[i].newPrice %> SDG</h5>
                 </div>
-               <a class="secBtn" href="#">
+               <a class="secBtn" href='/add-to-cart/<%=books[i]._id%>'>
                     <img src="assets/icons/shopping-cart.svg">
                     <span class="addtocart" >Add to cart</span>
                 </a>   
