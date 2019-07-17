@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Book Store | BOOKSHOP</title>
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body>
@@ -29,11 +35,17 @@
                 <ul>
                     <li><a href='#'>Discover</a></li>
                     <li><a class= 'breaker' href='#'>|</a></li>
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                            <i class="fas fa-cart-plus"></i>
+                        </span>
+                        <div class="cart-items">0</div>
+                    </div>
                     <%if(name){%>
-                    <li><a href='/user/cart'>Cart</a></li>
-                    <li><a href='/user/dashboard'></a>Icon</li> 
+                        <li><a href='/user/cart'>Cart</a></li>
+                        <li><a href='/user/dashboard'></a>Icon</li> 
                     <%} else {%>
-                    <li><a href='/user/login'>Login</a></li>
+                        <li><a href='/user/login'>Login</a></li>
                     <%}%>
                 </ul>
             </div>

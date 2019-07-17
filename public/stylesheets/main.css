@@ -8,7 +8,7 @@ a.breaker {
 }
 
 .banner {
-  background: #212C4F;
+  background: #212c4f;
   color: white;
   font-weight: 500;
   width: 100%;
@@ -92,13 +92,13 @@ input#search-bar {
   width: 100%;
   height: 30px;
   padding: 0 20px;
-  border: 1px solid #D0CFCE;
+  border: 1px solid #d0cfce;
   border-radius: 14px;
   outline: none;
 }
 
 input#search-bar:focus {
-  border: 1px solid #008ABF;
+  border: 1px solid #008abf;
   -webkit-transition: 0.35s ease;
   transition: 0.35s ease;
   color: #666;
@@ -140,6 +140,22 @@ input#search-bar:focus:-ms-placeholder {
 .menu li a {
   text-decoration: none;
   color: #000;
+}
+
+.cart-btn {
+  position: relative;
+  padding: 5px 10px 0 5px;
+  cursor: pointer;
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -3px;
+  background: #b01eff;
+  padding: 0 5px;
+  border-radius: 40%;
+  color: #c6d0eb;
 }
 
 @media screen and (max-width: 789px) {
@@ -239,7 +255,7 @@ input#search-bar:focus:-ms-placeholder {
   padding: 8px 15px 10px 15px;
   font-weight: 500;
   text-transform: uppercase;
-  background: #B01EFF;
+  background: #b01eff;
   border: transparent solid 1px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
@@ -349,7 +365,10 @@ img.image {
   font-weight: 600;
 }
 
-.rightCard .authorName, .rightCard .category, .rightCard .oldPrice, .rightCard .newPrice {
+.rightCard .authorName,
+.rightCard .category,
+.rightCard .oldPrice,
+.rightCard .newPrice {
   margin: 0 0 10px 0;
 }
 
@@ -487,13 +506,13 @@ img.image {
     color: #fff;
     width: 100%;
     height: 24px;
-    background: #212C4F;
+    background: #212c4f;
     border-radius: 0 0 20px 20px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   .secBtn:hover {
-    background-color: #B01EFF;
+    background-color: #b01eff;
     color: #fff;
   }
   .secBtn img {
