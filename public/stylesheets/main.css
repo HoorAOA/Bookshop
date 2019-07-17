@@ -168,6 +168,8 @@ input#search-bar:focus:-ms-placeholder {
         -ms-flex-direction: row;
             flex-direction: row;
     float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
   }
   .hamburger {
